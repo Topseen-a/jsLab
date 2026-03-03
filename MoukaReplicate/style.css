@@ -1,0 +1,140 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 15px 80px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    justify-self: start;
+}
+
+.logo img {
+    height: 40px;
+    display: block;
+}
+
+.nav div:nth-child(2) {
+    justify-self: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #033F62;
+    margin: 0 15px;
+    font-size: .75rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #006837;
+}
+
+.nav a.highlight {
+    background-color: #006837;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.front-section {
+    margin: 0;
+    padding: 0;
+}
+
+.front {
+    position: relative;
+}
+
+.front img {
+    width: 1350px;
+    height: 800px;
+    display: block;
+}
+
+.shop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #006837;
+    color: yellow;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.shop:hover {
+    background-color: #198754;
+    color: white;
+}
+
+.hero-text {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 120px 0;
+    white-space: nowrap;
+
+    animation: moveLeft 25s linear infinite;
+}
+
+@keyframes moveLeft {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.brand {
+    border: 1px solid #033F62;
+    padding: 8px 16px;
+    background-color: #006837;
+    border-radius: 3px;
+    font-size: 20px;
+    padding: 8px 16px;
+    color: white;
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    color: #033F62;
+}
+
+.second-shop {
+    color: #198754;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.second-shop:hover {
+    color: #033F62;
+    text-decoration: underline;
+}
+
+.middle {
+    display: flex;
+    background-color: #006837;
+    /* flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px; */
+}
