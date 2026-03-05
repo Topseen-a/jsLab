@@ -1,4 +1,4 @@
-// const {validateScore, calculateStudentTotal, calculateClassSummary} = require("./studentGradeApp");
+const {validateScore, calculateStudentTotal, calculateClassSummary} = require("./studentGradeApp");
 
 test("valid score should return true", ()=>{
     expect(validateScore(50)).toBe(true);
